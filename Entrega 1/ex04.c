@@ -3,8 +3,8 @@
 
 void main(){
 	
-	char a[10] = "Ana";
-	char b[10] = "Caroline";
+	char a[10] = "Roberta";
+	char b[10] = "Aline";
 
 	if(strcmp(a,b) < 0)
     {
