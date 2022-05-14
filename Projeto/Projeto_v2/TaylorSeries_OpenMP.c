@@ -28,21 +28,18 @@ int main(void)
   printf("\n--------EXECUCAO PARALELA-----------\n");
   int tid;
   float result1, result2;
-  double startP, endP;
-  startP = omp_get_wtime();
+
   #pragma omp parallel num_threads(2)
   {
     tid = omp_get_thread_num();
     if(tid == 0)
-        result1 = TaylorSeries(1);
+      result1 = TaylorSeries(1);
     else
-        result2 = TaylorSeries(2);
-
+      result2 = TaylorSeries(2);
   }
-  endP = omp_get_wtime();
   printf("O resultado da thread 0 foi de: %f\n", result1);
   printf("O resultado da thread 1 foi de: %f\n", result2);
-  printf("Tempo de execução foi de: %f segundos\n", endP - startP);
+  printf("E o resultado final: %f", result1 + result2);
 
   return 0;
 }
