@@ -1,24 +1,31 @@
 <h1>Como compilar!</h1>
 <h3>Foi utilizado gcc para a compilação</h3>
-<br>gcc TaylorSeries_OpenMP.c -o taylorserie -fopenmp
-<br>E para a execução: ./taylorseries ---- ou para ver o tempo -> time ./taylorseries
+<br> $ gcc TaylorSeries_OpenMP.c -o taylorserie -fopenmp
+<br>E para a execução: $ ./taylorseries ---- ou para ver o tempo -> $ time ./taylorseries
 
 ***
 
 <h2>Resultados</h2>
 <li><b>Para o código serial: </b></li>
   <ol><li>resultado para ln(100): 5.1873</li>
-  <li>tempo de execução: 0m0.010s</li></ol>
+  <li>tempo de execução: 0m0.010s</li>
+  <li>Speedup Serial = 1</li></ol>
   
 <li><b>Para o código OpenMP: </b></li>
   <ol><li>resultado para ln(100) da primeira thread: 2.9377</li>
   <li>resultado para ln(100) da segunda thread: 2.2496</li>
-  <li>tempo de execução: 0m0.006s</li></ol>
+  <li>tempo de execução: 0m0.006s</li>
+  <li>Speedup Serial = 1</li>
+  <li>Speedup Paralelo = 1,666..</li></ol>
 
 <li><b>Para o código Critical: </b></li>
   <ol><li>resultado para ln(100) da primeira thread: 4.4992</li>
   <li>resultado para ln(100) da segunda thread: 0.6881</li>
-  <li>tempo de execução: 0m0.006s</li></ol>
+  <li>tempo de execução: 0m0.006s</li>
+  <li>Speedup Serial = 1</li>
+  <li>Speedup Paralelo = 1,666..</li></ol>
+  
+
   
   ***
   
