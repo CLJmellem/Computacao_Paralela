@@ -1,6 +1,6 @@
 <h1>Como compilar!</h1>
 <h3>Foi utilizado gcc para a compilação</h3>
-<br>Já existe as versões compiladas, no entanto, para criar outra: gcc TaylorSeries_OpenMP.c -o taylorserie -fopenmp
+<br>gcc TaylorSeries_OpenMP.c -o taylorserie -fopenmp
 <br>E para a execução: ./taylorseries ---- ou para ver o tempo -> time ./taylorseries
 
 ***
