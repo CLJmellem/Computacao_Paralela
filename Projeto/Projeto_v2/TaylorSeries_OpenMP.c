@@ -10,7 +10,7 @@ long int T = 10000000;
 
 double sum = 0;
 
-float TaylorSeries(){
+double TaylorSeries(){
 
   double i = 1, j = T/2, k = T/(4/3), l = T;
   int tid = omp_get_thread_num();
