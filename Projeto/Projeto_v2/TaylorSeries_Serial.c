@@ -5,17 +5,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+long int T = 10000000;
+float soma = 0; 
 
 int main(void)
 {
 
   printf("---------EXECUCAO SERIAL---------\n");
-  float soma = 0, x = 1;
+  float x = 1;
 
-  for(; x<=100; x++)
+  for(; x<=T; x++)
   {
     soma += 1/x;
   }
 
-  printf("O valor para ln(100) é: %f\n", soma);
+  printf("O valor para ln(%ld) é: %f\n",T, soma);
 }
