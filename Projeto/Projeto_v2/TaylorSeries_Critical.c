@@ -59,7 +59,7 @@ int main(void)
     TaylorSeries();    
   }
  
-  printf("O resultado da thread 0 foi de: %f\n", sum);
+  printf("O resultado para ln(%ld): %f\n",T, sum);
  
   return 0;
 }
