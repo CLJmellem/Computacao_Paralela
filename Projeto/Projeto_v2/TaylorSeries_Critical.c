@@ -15,29 +15,32 @@ float TaylorSeries(){
   float i = 1, j = T/2, k = T/(4/3), l = T;
   int tid = omp_get_thread_num();
 	
-  #pragma omp critical
   switch(tid){
   	case 0:
   		for(; i <= T/(4/1); i++)
     	{
+  			#pragma omp critical
       		sum += 1/i;
     	}
     	break;
     case 1:
     	for(; j <= T/2; j++)
     	{
+			#pragma omp critical
       		sum += 1/j;
     	}
     	break;
     case 2:
     	for(; k <= T/(4/3); k++)
     	{
+			#pragma omp critical
       		sum += 1/k;
     	}
     	break;
     case 3:
     	for(; l <= T; l++)
     	{
+			#pragma omp critical
       		sum += 1/l;
     	}
     	break;
