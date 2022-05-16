@@ -8,7 +8,7 @@
 
 long int T = 10000000;
 
-float sum = 0;
+double sum = 0;
 
 float TaylorSeries(){
 
