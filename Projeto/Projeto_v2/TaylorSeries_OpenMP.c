@@ -12,7 +12,7 @@ float sum = 0;
 
 float TaylorSeries(){
 
-  float i = 1, j = T/2, k = T/(4/3), l = T;
+  double i = 1, j = T/2, k = T/(4/3), l = T;
   int tid = omp_get_thread_num();
 	
   switch(tid){
