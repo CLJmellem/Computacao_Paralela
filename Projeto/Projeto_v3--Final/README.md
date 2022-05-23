@@ -6,3 +6,7 @@
 <ol>Para executar: ./nome 
 <li>OU para ver o tempo de execucao em Linux: time ./nome</li>
 <li>OU para ver o tempo de execucao em Windows: Measure-Command {.\nome.exe}</li></ol>
+
+***
+
+<h2>Calculo do speedup</h2>
