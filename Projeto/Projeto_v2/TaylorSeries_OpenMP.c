@@ -6,11 +6,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-long int T = 10000000;
+long int T = 10000000000;
 
-float sum = 0;
+double sum = 0;
 
-float TaylorSeries(){
+double TaylorSeries(){
 
   double i = 1, j = T/2, k = T/(4/3), l = T;
   int tid = omp_get_thread_num();

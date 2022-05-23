@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-long int T = 10000000;
+long int T = 10000000000;
 float soma = 0; 
 
 int main(void)
